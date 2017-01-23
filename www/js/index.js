@@ -8,7 +8,8 @@ var app = {
     onDeviceReady: function() {
         var startButton = document.getElementById('start');
         startButton.addEventListener('click', function() {
-            navigator.notification.alert('oh hello!');
+            navigator.notification.alert('oh hello! exiting kiosk...');
+            KioskPlugin.exitKiosk();
         });
     },
 };
